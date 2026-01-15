@@ -6,7 +6,7 @@ test('intent to fail', async ({ page }) => {
 
   // 2. ERROR: We expect the title to be "Facebook" (which is wrong!)
   await expect(page).toHaveTitle('Facebook');
-}); 
+});
 
 // npx playwright test -g "intent to fail" --trace on
 // npx playwright show-trace test-results/traceviewer-intent-to-fail/trace.zip
