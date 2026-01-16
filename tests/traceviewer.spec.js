@@ -5,7 +5,7 @@ test('intent to fail', async ({ page }) => {
   await page.goto('https://google.com');
 
   // 2. ERROR: We expect the title to be "Facebook" (which is wrong!)
-  await expect(page).toHaveTitle('Facebook');
+  await expect(page).toHaveTitle('Google');
 });
 
 // npx playwright test -g "intent to fail" --trace on
