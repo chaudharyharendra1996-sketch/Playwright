@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playwright Automation Practice Arena</title>
+    <style>
+        /* Modern Reset & Base Styles */
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            gap: 2rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+        header p { color: var(--text-muted); }
+
+        /* Card Component */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 { border-bottom: 2px solid var(--bg); padding-bottom: 0.5rem; margin-bottom: 1.5rem; font-size: 1.5rem; }
+        h3 { margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--text-muted); }
+
+        /* Form Styles */
+        .form-group { margin-bottom: 1.2rem; }
+        label { display: block; margin-bottom: 0.4rem; font-weight: 600; font-size: 0.9rem; }
+        
+        input[type="text"], input[type="email"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            transition: border-color 0.2s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        /* Checkbox & Radio Customization */
+        .check-group { display: flex; gap: 1.5rem; align-items: center; }
+        .check-item { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+        input[type="radio"], input[type="checkbox"] { transform: scale(1.2); accent-color: var(--primary); }
+
+        /* Buttons */
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn:hover { background-color: var(--primary-hover); transform: translateY(-1px); }
+        .btn-secondary { background-color: #ec4899; }
+        .btn-outline { background-color: transparent; border: 2px solid var(--primary); color: var(--primary); }
+        .btn-outline:hover { background-color: var(--primary); color: white; }
+
+        /* Grid for Inputs */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+        /* Tooltip */
+        .tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; cursor: help; }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+        .tooltip:hover .tooltiptext { visibility: visible; }
+
+        /* Loading Spinner */
+        #loading-spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Misc */
+        .hidden { display: none; }
+        .delayed-text { color: green; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🎭 Playwright Playground</h1>
+        <p>A comprehensive test suite for modern web automation</p>
+    </header>
+
+    <div class="card" id="form-section">
+        <h2>📝 Advanced Registration Form</h2>
+        <form id="practice-form" onsubmit="handleFormSubmit(event)">
+            <div class="grid-2">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="Doe">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@example.com">
+            </div>
+
+            <div class="form-group">
+                <label>Gender Identity</label>
+                <div class="check-group">
+                    <label class="check-item"><input type="radio" name="gender" value="male"> Male</label>
+                    <label class="check-item"><input type="radio" name="gender" value="female"> Female</label>
+                    <label class="check-item"><input type="radio" name="gender" value="other" disabled> Other (Disabled)</label>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label for="country">Country (Select)</label>
+                    <select id="country">
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="in">India</option>
+                        <option value="ca">Canada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Tech Stack (Multi-Select)</label>
+                    <select id="skills" multiple style="height: 100px;">
+                        <option value="js">JavaScript</option>
+                        <option value="py">Python</option>
+                        <option value="java">Java</option>
+                        <option value="pw">Playwright</option>
+                        <option value="cy">Cypress</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Preferences</label>
+                <div class="check-group">
+                    <label class="check-item"><input type="checkbox" id="newsletter" checked> Subscribe to Newsletter</label>
+                    <label class="check-item"><input type="checkbox" id="terms"> I agree to Terms & Conditions</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Register Now</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>🖱️ Mouse Interactions & Events</h2>
+        <div class="grid-2">
+            <div>
+                <h3>Button Variations</h3>
+                <button class="btn btn-secondary" id="dbl-click-btn" ondblclick="alert('Double Click Successful!')">Double Click Me</button>
+                <button class="btn btn-outline" id="right-click-btn" oncontextmenu="handleRightClick(event)">Right Click Me</button>
+                <div style="margin-top:10px;">
+                    <button class="btn" id="hover-btn" onmouseover="showHoverContent()" onmouseout="hideHoverContent()">Hover Over Me</button>
+                    <span id="hover-msg" class="hidden" style="margin-left: 10px; color: var(--primary);">I am visible now!</span>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Upload & Drag</h3>
+                <div class="form-group">
+                    <label for="upload">Upload Profile Picture</label>
+                    <input type="file" id="upload">
+                </div>
+                <div class="tooltip">Hover here for Tooltip
+                    <span class="tooltiptext">Tooltip Text</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>⏳ Dynamic Content & Waits</h2>
+        <p>Test your <code>waitFor</code> and auto-waiting strategies here.</p>
+        
+        <div style="margin-top: 1rem; border-top: 1px dashed #ccc; padding-top: 1rem;">
+            <button class="btn btn-secondary" onclick="triggerDelay()">Trigger 5s Delay</button>
+            <div id="loading-spinner" style="display:inline-block; vertical-align:middle; margin-left:10px;"></div>
+            <p id="delayed-msg" class="hidden delayed-text">Process Complete! Use <br><code>await page.waitForSelector('#delayed-msg')</code></p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <h3>Alerts & Modals</h3>
+            <button class="btn btn-outline" onclick="alert('This is a simple alert')">Trigger Alert</button>
+            <button class="btn btn-outline" onclick="confirm('Are you sure?')">Trigger Confirm</button>
+            <button class="btn btn-outline" onclick="prompt('Enter your name:')">Trigger Prompt</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🔗 Links & Navigation</h2>
+        <p>
+            Visit <a href="https://playwright.dev" target="_blank" id="new-tab-link">Playwright Docs (New Tab)</a> 
+            or go to the <a href="#form-section">Top of Page</a>.
+        </p>
+
+        <h3 style="margin-top: 20px;">Iframe Example</h3>
+        <iframe srcdoc="<body style='background:#f0f9ff; padding:20px; font-family:sans-serif;'><h4>I am inside an iframe</h4><button style='padding:5px 10px; cursor:pointer;' onclick='this.innerText=`Clicked!`'>Click Button Inside Iframe</button></body>" 
+                style="width: 100%; height: 150px; border: 2px solid #ddd; border-radius: 6px;" 
+                id="iframe-example">
+        </iframe>
+    </div>
+
+</div>
+
+<script>
+    // Form Handler
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        const fname = document.getElementById('fname').value;
+        const country = document.getElementById('country').value;
+        alert(`Form Submitted!\nName: ${fname}\nCountry Code: ${country}`);
+    }
+
+    // Right Click Handler
+    function handleRightClick(e) {
+        e.preventDefault();
+        alert('Context Menu (Right Click) Detected!');
+    }
+
+    // Hover Logic
+    function showHoverContent() {
+        document.getElementById('hover-msg').classList.remove('hidden');
+    }
+    function hideHoverContent() {
+        document.getElementById('hover-msg').classList.add('hidden');
+    }
+
+    // Delay Logic
+    function triggerDelay() {
+        const spinner = document.getElementById('loading-spinner');
+        const msg = document.getElementById('delayed-msg');
+        
+        spinner.style.display = 'inline-block';
+        msg.classList.add('hidden');
+
+        setTimeout(() => {
+            spinner.style.display = 'none';
+            msg.classList.remove('hidden');
+        }, 5000); // 5 seconds delay
+    }
+</script>
+
+</body>
+</html>
