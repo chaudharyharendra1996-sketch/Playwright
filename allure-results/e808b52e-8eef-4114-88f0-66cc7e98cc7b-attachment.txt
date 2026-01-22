@@ -1,0 +1,6 @@
+Step 1: Login Successful. Token: 9ac47b85f775f46
+Step 2: Booking Created. ID: 996
+Step 3: Booking Verified via GET
+Step 4: Booking Updated. New Needs: Dinner
+Step 5: Booking Deleted
+✅ End-to-End Test Passed!
