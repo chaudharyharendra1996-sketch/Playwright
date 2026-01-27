@@ -1,0 +1,68 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - complementary "Récompenses et préférences du compte" [ref=e3]:
+      - link "Connexion Connexion" [ref=e4] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic [ref=e5]: Connexion
+        - generic "Connexion" [ref=e6]
+      - button "Paramètres et liens rapides" [ref=e7] [cursor=pointer]
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - generic [ref=e11]:
+        - link "Bing" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Cartes" [ref=e16] [cursor=pointer]:
+          - /url: /maps/search?style=r
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - button "Rechercher dans Bing Cartes" [ref=e21] [cursor=pointer]
+            - combobox "Rechercher dans Bing Cartes" [active] [ref=e24]
+          - status [ref=e25]
+        - link "Ouvrir l’affichage des itinéraires" [ref=e28] [cursor=pointer]:
+          - /url: /maps/directions?style=r
+          - generic [ref=e30]: Itinéraire
+    - main [ref=e31]:
+      - generic "Carte de Inde" [ref=e34]:
+        - region "Map" [ref=e37]
+        - generic:
+          - generic [ref=e38]:
+            - button "Sélectionnez un style" [expanded] [ref=e40] [cursor=pointer]
+            - button "Trafic" [ref=e42] [cursor=pointer]
+            - generic [ref=e43]:
+              - button "Me localiser" [ref=e44] [cursor=pointer]
+              - generic [ref=e46]:
+                - button "Développer/Réduire Geochain" [expanded] [ref=e47] [cursor=pointer]
+                - generic [ref=e49]: Inde
+            - generic "Réglage du zoom" [ref=e50]:
+              - button "Zoom avant" [ref=e51] [cursor=pointer]
+              - button "Zoom arrière" [ref=e52] [cursor=pointer]
+            - generic "Contrôle de rotation" [ref=e53]:
+              - button "Faire pivoter vers la droite" [ref=e54] [cursor=pointer]
+              - button "Réinitialisation de la rotation par défaut" [ref=e55] [cursor=pointer]
+              - button "Faire pivoter vers la gauche" [ref=e56] [cursor=pointer]
+            - generic "Contrôle de tangage" [ref=e57]:
+              - button "Augmenter l’inclinaison" [ref=e58] [cursor=pointer]
+              - button "Restaurer l’inclinaison par défaut" [ref=e59] [cursor=pointer]
+              - button "Diminuer l’inclinaison" [ref=e60] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic: 500 mi
+            - generic:
+              - generic: 500 km
+          - generic:
+            - generic:
+              - generic: © 2026 NavInfo, © 2026 TomTom
+  - contentinfo "Pied de page" [ref=e61]:
+    - list [ref=e63]:
+      - listitem [ref=e64]:
+        - link "Confidentialité" [ref=e65] [cursor=pointer]:
+          - /url: http://go.microsoft.com/fwlink/?LinkId=521839
+      - listitem [ref=e66]:
+        - link "Conditions générales" [ref=e67] [cursor=pointer]:
+          - /url: http://go.microsoft.com/fwlink/?LinkID=246338
+    - button "Commentaires" [ref=e69] [cursor=pointer]
+```
