@@ -1,0 +1,3 @@
+Alert says: I am an alert box!
+Confirm says: Press a button!
+Prompt says: Please enter your name:

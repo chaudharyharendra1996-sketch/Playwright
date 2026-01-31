@@ -91,4 +91,27 @@ module.exports = defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+
+
 });
+
+/* // @ts-ignore
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  projects: [
+    // Pehle setup project chalega
+    { name: 'setup', testMatch: /.*\.setup\.js/ },
+    
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        // Saved state ko yahan use karein
+        storageState: 'playwright/.auth/user.json',
+      },
+      dependencies: ['setup'], // Is project ko setup par depend kar dein
+    },
+  ],
+});
+@ts-ignore */
