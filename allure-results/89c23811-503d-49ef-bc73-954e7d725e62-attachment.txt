@@ -1,0 +1,1 @@
+Text after clicking Cancel: You pressed Cancel!

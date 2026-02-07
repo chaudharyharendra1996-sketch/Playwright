@@ -1,0 +1,12 @@
+[
+  'Noida',
+  'Delhi',
+  'Jaipur (Rajasthan)',
+  'Agra',
+  'Gurugram (Gurgaon)',
+  'Dehradun',
+  'Haridwar',
+  'Rishikesh',
+  'Bareilly (Uttar Pradesh)',
+  'Sikar'
+]

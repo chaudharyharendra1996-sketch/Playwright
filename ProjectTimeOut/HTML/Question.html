@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Question</title>
+    <style>
+        /* 1. Subtle Background & Layout */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Prevents scrollbars when faces pop up */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* 2. The Floating Faces */
+        .funny-face {
+            position: absolute;
+            font-size: 3rem;
+            pointer-events: none; /* Let clicks pass through them */
+            animation: floatUp 4s linear forwards;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.8; }
+            80% { opacity: 0.8; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        /* 3. The Central Card */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            z-index: 10;
+            max-width: 400px;
+            width: 90%;
+            border: 1px solid #e1e1e1;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            min-height: 60px; /* Space for buttons */
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.1s;
+        }
+
+        /* 4. The Answer Bubbles */
+        #btn-yes {
+            background-color: #ff6b6b;
+            color: white;
+            position: absolute; /* Allows it to move freely */
+            left: 20px; /* Initial position relative to container */
+        }
+
+        #btn-no {
+            background-color: #4ecdc4;
+            color: white;
+            position: absolute;
+            right: 20px; /* Initial position relative to container */
+        }
+
+        #btn-no:hover {
+            transform: scale(1.1);
+        }
+
+        /* 5. The Meme Overlay (Hidden by default) */
+        .meme-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .meme-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .meme-content img {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 5px;
+        }
+
+        .close-btn {
+            margin-top: 15px;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Q. Are You Mentally stable?</h2>
+        <div class="btn-container">
+            <button id="btn-yes">YES</button>
+            <button id="btn-no">NO</button>
+        </div>
+    </div>
+
+    <div class="meme-overlay" id="memeOverlay">
+        <div class="meme-content">
+            <img src="https://media1.giphy.com/media/l4KibWpBGWchSqCRy/giphy.gif?cid=ecf05e478z9t457j1h2j547847&rid=giphy.gif" alt="Funny Mental Health Meme">
+            <br>
+            <p style="font-size: 1.2rem; font-weight: bold; margin-top:10px;">Whew! Just checking. 🧠✨</p>
+            <button class="close-btn" onclick="location.reload()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. Funny Faces Logic ---
+        const faces = ['🤪', '🥴', '🫠', '🤡', '👽', '👻', '👀', '🧠'];
+        
+        function popFace() {
+            const face = document.createElement('div');
+            face.classList.add('funny-face');
+            face.innerText = faces[Math.floor(Math.random() * faces.length)];
+            
+            // Random Position
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            
+            face.style.left = `${x}px`;
+            face.style.top = `${y}px`;
+            
+            // Random Size
+            const size = Math.random() * 2 + 1; // Between 1rem and 3rem
+            face.style.fontSize = `${size}rem`;
+
+            document.body.appendChild(face);
+
+            // Remove after animation to prevent memory leaks
+            setTimeout(() => {
+                face.remove();
+            }, 4000);
+        }
+
+        // Pop a face every 800ms
+        setInterval(popFace, 800);
+
+
+        // --- 2. The "Running Away" Button Logic ---
+        const btnYes = document.getElementById('btn-yes');
+        
+        btnYes.addEventListener('mouseover', function() {
+            // Calculate random positions within the window (minus button size)
+            const maxX = window.innerWidth - btnYes.clientWidth - 50;
+            const maxY = window.innerHeight - btnYes.clientHeight - 50;
+            
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            
+            // Change position to fixed so it can leave the card
+            btnYes.style.position = 'fixed'; 
+            btnYes.style.left = randomX + 'px';
+            btnYes.style.top = randomY + 'px';
+        });
+
+        // --- 3. The "Meme" Logic ---
+        const btnNo = document.getElementById('btn-no');
+        const overlay = document.getElementById('memeOverlay');
+
+        btnNo.addEventListener('click', function() {
+            overlay.style.display = 'flex';
+        });
+
+    </script>
+</body>
+</html>

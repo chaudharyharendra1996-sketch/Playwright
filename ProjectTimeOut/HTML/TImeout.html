@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playwright Timeout Demo</title>
+    <style>
+        #status {
+            display: none;
+            color: green;
+        }
+
+
+        #delayedButton {
+            display: none;
+        }
+
+        #hiddenPara {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Welcome to Timeout Testing</h1>
+    <input type="text" id="username" value="playwright_user" />
+    <button id="delayedButton">Click Me</button>
+    <p id="status">Done</p>
+    <p id="hiddenPara">This is hidden</p>
+    <input type="checkbox" id="agree" checked />
+    <script>
+        // Simulate async behavior
+        // Show the button after 5 seconds
+        setTimeout(() => {
+            document.getElementById('delayedButton').style.display = 'inline-block';
+        }, 5000);
+        // Show the status message after 6 seconds
+        setTimeout(() => {
+            document.getElementById('status').style.display = 'block';
+            document.getElementById('status').textContent = 'Finished';
+        }, 6000);
+    </script>
+</body>
+
+</html>

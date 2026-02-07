@@ -1,0 +1,20 @@
+[
+  'Delhi',
+  'ISBT Kashmiri Gate, Delhi',
+  'Near Delhi Airport, Delhi',
+  'Akshardham Metro Station, Delhi',
+  'Badarpur, Delhi',
+  'Mayur Vihar, Delhi',
+  'Dhaula Kuan, Delhi',
+  'Delhi Airport',
+  'Kashmiri Gate',
+  'Majnu Ka Tilla',
+  'Anand Vihar',
+  'Dhaula Kuan',
+  'Delhi',
+  'Jaipur (Rajasthan)',
+  'Chandigarh',
+  'Agra',
+  'Gurugram (Gurgaon)',
+  'Dehradun'
+]
