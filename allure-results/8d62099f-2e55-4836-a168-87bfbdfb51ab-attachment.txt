@@ -1,0 +1,13 @@
+[
+  'Popular Cities near you',
+  'Meerut',
+  'Delhi',
+  'Chandigarh',
+  'Agra',
+  'Gurugram (Gurgaon)',
+  'Dehradun',
+  'Haridwar',
+  'Rishikesh',
+  'Bareilly (Uttar Pradesh)',
+  'Shimla'
+]

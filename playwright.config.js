@@ -62,9 +62,9 @@ module.exports = defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] ,
-      trace: 'on',
+     /*  trace: 'on',
       screenshot: 'on',
-      video: 'on',
+      video: 'on', */
       }
     },
 /* 

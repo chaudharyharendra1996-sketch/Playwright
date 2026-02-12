@@ -25,7 +25,7 @@ await page.locator('#confirmBtn').click();
 await expect(page.locator("//p[@id='demo']")).toHaveText('You pressed Cancel!');
 const resultText = await page.locator("//p[@id='demo']").textContent();
 
-console.log('Text after clicking Cancel:', resultText);
+console.log('Text after clicking Cancel:'+resultText);
 }) */
 
 //Prompt Alert
@@ -39,8 +39,8 @@ page.once('dialog', async dialog => {
 });
 await page.waitForTimeout(1000);
 await page.locator('#promptBtn').click();
-const demo = await page.locator("#demo")
+const demo = page.locator("#demo")
 //await expect(demo).toHaveText('Hello Harry Puttar! How are you today?');
 const resultText = await demo.textContent();
-console.log('Result text:', resultText);
+console.log('Result text:'+ resultText);
 })

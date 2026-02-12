@@ -1,0 +1,12 @@
+Page Title: Automation Testing Practice
+Page URL: https://testautomationpractice.blogspot.com/
+User Typed: Harendra Singh
+Header: Automation Testing Practice
+Input Class: form-control
+Table Rows Found: 7
+Input is at X: 162.86538696289062, Y: 341.203857421875
+Is Input Visible? true
+Is Checkbox Checked? true
+--- Starting API Check ---
+API Status: 403
+API Status Text: Forbidden

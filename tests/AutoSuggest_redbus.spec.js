@@ -5,27 +5,24 @@ test('Redbus', async ({ page }) => {
 
     await page.locator('#srcinput').fill('Delhi');
 
+
+    await page.waitForSelector("//div[@role='heading']")
+    const droplist = await page.locator("//div[@role='heading']").allInnerTexts();
+    console.log(droplist);
+
     
-    await page.waitForSelector("//div[starts-with(@class, 'listHeader')]")
-    const newone = await page.locator("//div[starts-with(@class, 'listHeader')]").allInnerTexts();
-    console.log(newone);
-       
-    for (const input of newone) 
-    {
+        for (const input of droplist) {
     
-        if (newone.includes('Mayur Vihar')) 
-        {
-            await input.click();
-            break;
+            if (droplist.includes('Mayur Vihar')) {
+                await input.click();
+                break;
+            }
+    
         }
-        //console.log(newInput);
-    }
 
-
-
-
-
-
+   
 })
+
+
 
 

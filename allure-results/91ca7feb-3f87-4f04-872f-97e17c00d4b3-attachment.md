@@ -1,0 +1,358 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main [ref=e4]:
+    - img "Facebook" [ref=e6]
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Create a new account
+        - generic [ref=e11]: It's quick and easy.
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: First name
+            - textbox "First name" [ref=e24]:
+              - /placeholder: ""
+          - generic [ref=e27]:
+            - generic [ref=e28]: Surname
+            - textbox "Surname" [ref=e29]:
+              - /placeholder: ""
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - text: Date of birth
+            - button "Click for more information" [ref=e32] [cursor=pointer]
+          - generic [ref=e36]:
+            - combobox "Day" [ref=e37]:
+              - option "1"
+              - option "2"
+              - option "3"
+              - option "4" [selected]
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+              - option "10"
+              - option "11"
+              - option "12"
+              - option "13"
+              - option "14"
+              - option "15"
+              - option "16"
+              - option "17"
+              - option "18"
+              - option "19"
+              - option "20"
+              - option "21"
+              - option "22"
+              - option "23"
+              - option "24"
+              - option "25"
+              - option "26"
+              - option "27"
+              - option "28"
+              - option "29"
+              - option "30"
+              - option "31"
+            - combobox "Month" [ref=e38]:
+              - option "Jan"
+              - option "Feb" [selected]
+              - option "Mar"
+              - option "Apr"
+              - option "May"
+              - option "Jun"
+              - option "Jul"
+              - option "Aug"
+              - option "Sep"
+              - option "Oct"
+              - option "Nov"
+              - option "Dec"
+            - combobox "Year" [ref=e39]:
+              - option "2026"
+              - option "2025"
+              - option "2024"
+              - option "2023"
+              - option "2022"
+              - option "2021"
+              - option "2020"
+              - option "2019"
+              - option "2018"
+              - option "2017"
+              - option "2016"
+              - option "2015"
+              - option "2014"
+              - option "2013"
+              - option "2012"
+              - option "2011"
+              - option "2010"
+              - option "2009"
+              - option "2008"
+              - option "2007"
+              - option "2006"
+              - option "2005"
+              - option "2004"
+              - option "2003"
+              - option "2002"
+              - option "2001"
+              - option "2000"
+              - option "1999"
+              - option "1998"
+              - option "1997"
+              - option "1996"
+              - option "1995" [selected]
+              - option "1994"
+              - option "1993"
+              - option "1992"
+              - option "1991"
+              - option "1990"
+              - option "1989"
+              - option "1988"
+              - option "1987"
+              - option "1986"
+              - option "1985"
+              - option "1984"
+              - option "1983"
+              - option "1982"
+              - option "1981"
+              - option "1980"
+              - option "1979"
+              - option "1978"
+              - option "1977"
+              - option "1976"
+              - option "1975"
+              - option "1974"
+              - option "1973"
+              - option "1972"
+              - option "1971"
+              - option "1970"
+              - option "1969"
+              - option "1968"
+              - option "1967"
+              - option "1966"
+              - option "1965"
+              - option "1964"
+              - option "1963"
+              - option "1962"
+              - option "1961"
+              - option "1960"
+              - option "1959"
+              - option "1958"
+              - option "1957"
+              - option "1956"
+              - option "1955"
+              - option "1954"
+              - option "1953"
+              - option "1952"
+              - option "1951"
+              - option "1950"
+              - option "1949"
+              - option "1948"
+              - option "1947"
+              - option "1946"
+              - option "1945"
+              - option "1944"
+              - option "1943"
+              - option "1942"
+              - option "1941"
+              - option "1940"
+              - option "1939"
+              - option "1938"
+              - option "1937"
+              - option "1936"
+              - option "1935"
+              - option "1934"
+              - option "1933"
+              - option "1932"
+              - option "1931"
+              - option "1930"
+              - option "1929"
+              - option "1928"
+              - option "1927"
+              - option "1926"
+              - option "1925"
+              - option "1924"
+              - option "1923"
+              - option "1922"
+              - option "1921"
+              - option "1920"
+              - option "1919"
+              - option "1918"
+              - option "1917"
+              - option "1916"
+              - option "1915"
+              - option "1914"
+              - option "1913"
+              - option "1912"
+              - option "1911"
+              - option "1910"
+              - option "1909"
+              - option "1908"
+              - option "1907"
+              - option "1906"
+              - option "1905"
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: Gender
+            - button "Click for more information" [ref=e42] [cursor=pointer]
+          - generic [ref=e44]:
+            - generic [ref=e46]:
+              - text: Female
+              - radio "Female" [ref=e47]
+            - generic [ref=e49]:
+              - text: Male
+              - radio "Male" [ref=e50]
+            - generic [ref=e52]:
+              - text: Custom
+              - radio "Custom" [ref=e53]
+        - generic [ref=e56]:
+          - generic [ref=e57]: Mobile number or email address
+          - textbox "Mobile number or email address" [ref=e58]:
+            - /placeholder: ""
+        - generic [ref=e61]:
+          - generic [ref=e62]: New password
+          - textbox "New password" [ref=e63]:
+            - /placeholder: ""
+        - paragraph [ref=e65]:
+          - text: People who use our service may have uploaded your contact information to Facebook.
+          - link "Learn more" [ref=e66] [cursor=pointer]:
+            - /url: /help/637205020878504
+          - text: .
+        - paragraph [ref=e68]:
+          - text: By clicking Sign up, you agree to our
+          - link "Terms" [ref=e69] [cursor=pointer]:
+            - /url: /legal/terms/update
+          - text: ","
+          - link "Privacy Policy" [ref=e70] [cursor=pointer]:
+            - /url: /about/privacy/update
+          - text: and
+          - link "Cookies Policy" [ref=e71] [cursor=pointer]:
+            - /url: /policies/cookies/
+          - text: . You may receive SMS notifications from us and can opt out at any time.
+        - button "Sign up" [ref=e73] [cursor=pointer]
+        - link "Already have an account?" [ref=e75] [cursor=pointer]:
+          - /url: /login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzcwNzEzMDY0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D
+  - generic [ref=e77]:
+    - list [ref=e78]:
+      - listitem [ref=e79]: English (UK)
+      - listitem [ref=e80]:
+        - link "हिन्दी" [ref=e81] [cursor=pointer]:
+          - /url: https://www.facebook.com/r.php?locale=en_GB&display=page&entry_point=login
+      - listitem [ref=e82]:
+        - link "اردو" [ref=e83] [cursor=pointer]:
+          - /url: https://hi-in.facebook.com/r.php?locale=hi_IN&display=page&entry_point=login
+      - listitem [ref=e84]:
+        - link "ਪੰਜਾਬੀ" [ref=e85] [cursor=pointer]:
+          - /url: https://ur-pk.facebook.com/r.php?locale=ur_PK&display=page&entry_point=login
+      - listitem [ref=e86]:
+        - link "বাংলা" [ref=e87] [cursor=pointer]:
+          - /url: https://pa-in.facebook.com/r.php?locale=pa_IN&display=page&entry_point=login
+      - listitem [ref=e88]:
+        - link "ગુજરાતી" [ref=e89] [cursor=pointer]:
+          - /url: https://bn-in.facebook.com/r.php?locale=bn_IN&display=page&entry_point=login
+      - listitem [ref=e90]:
+        - link "मराठी" [ref=e91] [cursor=pointer]:
+          - /url: https://gu-in.facebook.com/r.php?locale=gu_IN&display=page&entry_point=login
+      - listitem [ref=e92]:
+        - link "தமிழ்" [ref=e93] [cursor=pointer]:
+          - /url: https://mr-in.facebook.com/r.php?locale=mr_IN&display=page&entry_point=login
+      - listitem [ref=e94]:
+        - link "తెలుగు" [ref=e95] [cursor=pointer]:
+          - /url: https://ta-in.facebook.com/r.php?locale=ta_IN&display=page&entry_point=login
+      - listitem [ref=e96]:
+        - link "മലയാളം" [ref=e97] [cursor=pointer]:
+          - /url: https://te-in.facebook.com/r.php?locale=te_IN&display=page&entry_point=login
+      - listitem [ref=e98]:
+        - link "ಕನ್ನಡ" [ref=e99] [cursor=pointer]:
+          - /url: https://ml-in.facebook.com/r.php?locale=ml_IN&display=page&entry_point=login
+      - listitem [ref=e100]:
+        - button "Show more languages" [ref=e101] [cursor=pointer]
+    - contentinfo "Facebook site links" [ref=e104]:
+      - list [ref=e105]:
+        - listitem [ref=e106]:
+          - link "Sign up" [ref=e107] [cursor=pointer]:
+            - /url: /reg/
+        - listitem [ref=e108]:
+          - link "Log in" [ref=e109] [cursor=pointer]:
+            - /url: /login/
+        - listitem [ref=e110]:
+          - link "Messenger" [ref=e111] [cursor=pointer]:
+            - /url: https://messenger.com/
+        - listitem [ref=e112]:
+          - link "Facebook Lite" [ref=e113] [cursor=pointer]:
+            - /url: /lite/
+        - listitem [ref=e114]:
+          - link "Video" [ref=e115] [cursor=pointer]:
+            - /url: https://www.facebook.com/watch/
+        - listitem [ref=e116]:
+          - link "Meta Pay" [ref=e117] [cursor=pointer]:
+            - /url: https://about.meta.com/technologies/meta-pay
+        - listitem [ref=e118]:
+          - link "Meta Store" [ref=e119] [cursor=pointer]:
+            - /url: https://www.meta.com/
+        - listitem [ref=e120]:
+          - link "Meta Quest" [ref=e121] [cursor=pointer]:
+            - /url: https://www.meta.com/quest/
+        - listitem [ref=e122]:
+          - link "Ray-Ban Meta" [ref=e123] [cursor=pointer]:
+            - /url: https://www.meta.com/smart-glasses/
+        - listitem [ref=e124]:
+          - link "Meta AI" [ref=e125] [cursor=pointer]:
+            - /url: https://www.meta.ai/
+        - listitem [ref=e126]:
+          - link "Meta AI more content" [ref=e127] [cursor=pointer]:
+            - /url: https://www.meta.ai/pages/mac-screenshots-guide-screenshot-toolbar-keyboard-shortcuts/?utm_source=foa_web_footer
+        - listitem [ref=e128]:
+          - link "Instagram" [ref=e129] [cursor=pointer]:
+            - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AT0CdCNQQJOlCGsijsWNO345g-eR3e20tLdtAJwKKI4Z12v2rSvRPQgBCBBMJ-Ug7rHY1khUI7wYl0TIyIdLpnCwe7Q1wpHadqVT0T1vX_rh1dlySoNGv9IeVC5uHJXsJx5A2hsK6NYNX9twgfj7VjI38HVO7HHepCPtUw
+        - listitem [ref=e130]:
+          - link "Threads" [ref=e131] [cursor=pointer]:
+            - /url: https://www.threads.com/
+        - listitem [ref=e132]:
+          - link "Voting Information Centre" [ref=e133] [cursor=pointer]:
+            - /url: /votinginformationcenter/?entry_point=c2l0ZQ%3D%3D
+        - listitem [ref=e134]:
+          - link "Privacy Policy" [ref=e135] [cursor=pointer]:
+            - /url: /privacy/policy/?entry_point=facebook_page_footer
+        - listitem [ref=e136]:
+          - link "Privacy Centre" [ref=e137] [cursor=pointer]:
+            - /url: /privacy/center/?entry_point=facebook_page_footer
+        - listitem [ref=e138]:
+          - link "About" [ref=e139] [cursor=pointer]:
+            - /url: https://about.meta.com/
+        - listitem [ref=e140]:
+          - link "Create ad" [ref=e141] [cursor=pointer]:
+            - /url: /ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto
+        - listitem [ref=e142]:
+          - link "Create Page" [ref=e143] [cursor=pointer]:
+            - /url: /pages/create/?ref_type=site_footer
+        - listitem [ref=e144]:
+          - link "Developers" [ref=e145] [cursor=pointer]:
+            - /url: https://developers.facebook.com/?ref=pf
+        - listitem [ref=e146]:
+          - link "Careers" [ref=e147] [cursor=pointer]:
+            - /url: /careers/?ref=pf
+        - listitem [ref=e148]:
+          - link "Cookies" [ref=e149] [cursor=pointer]:
+            - /url: /policies/cookies/
+        - listitem [ref=e150]:
+          - link "AdChoices" [ref=e151] [cursor=pointer]:
+            - /url: https://www.facebook.com/help/568137493302217
+            - text: AdChoices
+        - listitem [ref=e153]:
+          - link "Terms" [ref=e154] [cursor=pointer]:
+            - /url: /policies?ref=pf
+        - listitem [ref=e155]:
+          - link "Help" [ref=e156] [cursor=pointer]:
+            - /url: /help/?ref=pf
+        - listitem [ref=e157]:
+          - link "Contact uploading and non-users" [ref=e158] [cursor=pointer]:
+            - /url: https://www.facebook.com/help/637205020878504
+        - listitem:
+          - link "Settings" [ref=e159] [cursor=pointer]:
+            - /url: /settings
+        - listitem:
+          - link "Activity log" [ref=e160] [cursor=pointer]:
+            - /url: /allactivity?privacy_source=activity_log_top_menu
+    - generic [ref=e162]: Meta © 2026
+```

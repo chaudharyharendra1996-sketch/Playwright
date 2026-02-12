@@ -1,0 +1,124 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - link "About" [ref=e4] [cursor=pointer]:
+        - /url: https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+      - link "Store" [ref=e5] [cursor=pointer]:
+        - /url: https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "Gmail" [ref=e10] [cursor=pointer]:
+            - /url: https://mail.google.com/mail/&ogbl
+          - link "Search for Images" [ref=e12] [cursor=pointer]:
+            - /url: https://www.google.com/imghp?hl=en&ogbl
+            - text: Images
+        - button "Google apps" [ref=e15] [cursor=pointer]:
+          - img [ref=e16]
+        - link "Sign in" [ref=e20] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+    - generic [ref=e22]:
+      - 'link "ICC Men''s T20 Cricket World Cup 2026: Group Stage" [ref=e23] [cursor=pointer]':
+        - /url: /search?sca_esv=1981403e94cb94dc&q=icc+men%27s+t20+world+cup&oi=ddle&noiga=1&ct=483694412&hl=en-GB&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQPQgE
+        - 'img "ICC Men''s T20 Cricket World Cup 2026: Group Stage" [ref=e25]'
+      - button "Share" [ref=e27]:
+        - generic "Share" [ref=e28] [cursor=pointer]:
+          - img [ref=e32]
+    - search [ref=e35]:
+      - generic [ref=e37]:
+        - generic [ref=e39]:
+          - button "Upload files or images" [ref=e41] [cursor=pointer]:
+            - img [ref=e43]
+          - combobox "Search" [expanded] [active] [ref=e46]:
+            - generic [ref=e47]:
+              - text: Trending searches
+              - listbox [ref=e48]:
+                - option "bhel ofs" [ref=e52]:
+                  - generic [ref=e53]: bhel ofs
+                - option "railway board approves new vande bharat train and discontinues two services" [ref=e57]:
+                  - generic [ref=e58]: railway board approves new vande bharat train and discontinues two services
+                - option "avengers doomsday trailer" [ref=e62]:
+                  - generic [ref=e63]: avengers doomsday trailer
+                - option "anastasiia gubanova winter olympics" [ref=e67]:
+                  - generic [ref=e68]: anastasiia gubanova winter olympics
+                - option "aishwarya mohanraj mounjaro weight loss" [ref=e72]:
+                  - generic [ref=e73]: aishwarya mohanraj mounjaro weight loss
+                - option "apple iphone 17" [ref=e77]:
+                  - generic [ref=e78]: apple iphone 17
+                - option "tata steel q3 profit growth" [ref=e82]:
+                  - generic [ref=e83]: tata steel q3 profit growth
+                - option "japanese video" [ref=e87]:
+                  - generic [ref=e88]: japanese video
+                - option "trump netanyahu" [ref=e92]:
+                  - generic [ref=e93]: trump netanyahu
+                - option "rosoboronexport" [ref=e97]:
+                  - generic [ref=e98]: rosoboronexport
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - button "Search by voice" [ref=e101] [cursor=pointer]:
+                - img [ref=e102]
+              - button "Search by image" [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+            - link "AI Mode" [ref=e107] [cursor=pointer]:
+              - generic [ref=e109]:
+                - img [ref=e111]
+                - generic [ref=e118]: AI Mode
+        - generic [ref=e119]:
+          - generic [ref=e123]:
+            - button "Google Search" [ref=e124] [cursor=pointer]
+            - button "I'm Feeling Lucky" [ref=e125] [cursor=pointer]
+          - button "Report inappropriate predictions" [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]: Report inappropriate predictions
+        - generic [ref=e129]:
+          - button "Google Search" [ref=e130] [cursor=pointer]
+          - button "I'm Feeling Lucky" [ref=e131] [cursor=pointer]
+    - generic [ref=e134]:
+      - text: "Google offered in:"
+      - link "हिन्दी" [ref=e135] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDI
+      - link "বাংলা" [ref=e136] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDM
+      - link "తెలుగు" [ref=e137] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDQ
+      - link "मराठी" [ref=e138] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDU
+      - link "தமிழ்" [ref=e139] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDY
+      - link "ગુજરાતી" [ref=e140] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDc
+      - link "ಕನ್ನಡ" [ref=e141] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDg
+      - link "മലയാളം" [ref=e142] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDk
+      - link "ਪੰਜਾਬੀ" [ref=e143] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_t6qRSBCZT-hh22PsfIvRKDJKaEc%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjhyfzJr9OSAxUtV2wGHZvwGnUQ2ZgBCDo
+    - contentinfo [ref=e145]:
+      - generic [ref=e146]: India
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - link "Advertising" [ref=e149] [cursor=pointer]:
+            - /url: https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+          - link "Business" [ref=e150] [cursor=pointer]:
+            - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+          - link "How Search works" [ref=e151] [cursor=pointer]:
+            - /url: https://google.com/search/howsearchworks/?fg=1
+        - generic [ref=e152]:
+          - link "Privacy" [ref=e153] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=e154] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1
+          - button "Settings" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]: Settings
+  - generic:
+    - dialog "Choose Chrome, the browser built by Google":
+      - generic [ref=e168]:
+        - generic [ref=e169]: Choose Chrome, the browser built by Google
+        - generic [ref=e170]: Try a fast, secure browser with automatic updates
+        - generic [ref=e171]:
+          - button "Not interested" [ref=e173] [cursor=pointer]:
+            - generic [ref=e175]: Not interested
+          - button "Try it" [ref=e177] [cursor=pointer]:
+            - generic [ref=e179]: Try it
+```

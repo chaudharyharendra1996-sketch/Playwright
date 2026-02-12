@@ -8,8 +8,30 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.58.2",
     "@types/node": "^25.0.5",
     "allure-playwright": "^3.4.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "allure-js-commons": "^3.4.5",
+    "charenc": "^0.0.2",
+    "crypt": "^0.0.2",
+    "is-buffer": "^1.1.6",
+    "md5": "^2.3.0",
+    "playwright": "^1.57.0",
+    "playwright-core": "^1.57.0",
+    "undici-types": "^7.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaudharyharendra1996-sketch/Playwright.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chaudharyharendra1996-sketch/Playwright/issues"
+  },
+  "homepage": "https://github.com/chaudharyharendra1996-sketch/Playwright#readme"
 }

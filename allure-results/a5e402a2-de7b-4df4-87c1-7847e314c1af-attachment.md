@@ -1,0 +1,124 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - link "About" [ref=e4] [cursor=pointer]:
+        - /url: https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+      - link "Store" [ref=e5] [cursor=pointer]:
+        - /url: https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "Gmail" [ref=e10] [cursor=pointer]:
+            - /url: https://mail.google.com/mail/&ogbl
+          - link "Search for Images" [ref=e12] [cursor=pointer]:
+            - /url: https://www.google.com/imghp?hl=en&ogbl
+            - text: Images
+        - button "Google apps" [ref=e15] [cursor=pointer]:
+          - img [ref=e16]
+        - link "Sign in" [ref=e20] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+    - generic [ref=e22]:
+      - 'link "ICC Men''s T20 Cricket World Cup 2026: Group Stage" [ref=e23] [cursor=pointer]':
+        - /url: /search?sca_esv=1981403e94cb94dc&q=icc+men%27s+t20+world+cup&oi=ddle&noiga=1&ct=483694412&hl=en-GB&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQPQgE
+        - 'img "ICC Men''s T20 Cricket World Cup 2026: Group Stage" [ref=e25]'
+      - button "Share" [ref=e27]:
+        - generic "Share" [ref=e28] [cursor=pointer]:
+          - img [ref=e32]
+    - search [ref=e35]:
+      - generic [ref=e37]:
+        - generic [ref=e39]:
+          - button "Upload files or images" [ref=e41] [cursor=pointer]:
+            - img [ref=e43]
+          - combobox "Search" [expanded] [ref=e46]:
+            - generic [ref=e47]:
+              - text: Trending searches
+              - listbox [ref=e48]:
+                - option "titan share price" [ref=e52]:
+                  - generic [ref=e53]: titan share price
+                - option "stranger things the first shadow netflix" [ref=e57]:
+                  - generic [ref=e58]: stranger things the first shadow netflix
+                - option "k14x 5g" [ref=e62]:
+                  - generic [ref=e63]: k14x 5g
+                - option "ex army chief naravane book" [ref=e67]:
+                  - generic [ref=e68]: ex army chief naravane book
+                - option "ben stokes injury" [ref=e72]:
+                  - generic [ref=e73]: ben stokes injury
+                - option "japanese video" [ref=e77]:
+                  - generic [ref=e78]: japanese video
+                - option "annular solar eclipse" [ref=e82]:
+                  - generic [ref=e83]: annular solar eclipse
+                - option "jsw group" [ref=e87]:
+                  - generic [ref=e88]: jsw group
+                - option "nilave movie 2026 cast" [ref=e92]:
+                  - generic [ref=e93]: nilave movie 2026 cast
+                - option "bharat bandh trade unions strike protest" [ref=e97]:
+                  - generic [ref=e98]: bharat bandh trade unions strike protest
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - button "Search by voice" [ref=e101] [cursor=pointer]:
+                - img [ref=e102]
+              - button "Search by image" [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+            - link "AI Mode" [ref=e107] [cursor=pointer]:
+              - generic [ref=e109]:
+                - img [ref=e111]
+                - generic [ref=e118]: AI Mode
+        - generic [ref=e119]:
+          - generic [ref=e123]:
+            - button "Google Search" [ref=e124] [cursor=pointer]
+            - button "I'm Feeling Lucky" [ref=e125] [cursor=pointer]
+          - button "Report inappropriate predictions" [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]: Report inappropriate predictions
+        - generic [ref=e129]:
+          - button "Google Search" [ref=e130] [cursor=pointer]
+          - button "I'm Feeling Lucky" [ref=e131] [cursor=pointer]
+    - generic [ref=e134]:
+      - text: "Google offered in:"
+      - link "हिन्दी" [ref=e135] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDI
+      - link "বাংলা" [ref=e136] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDM
+      - link "తెలుగు" [ref=e137] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDQ
+      - link "मराठी" [ref=e138] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDU
+      - link "தமிழ்" [ref=e139] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDY
+      - link "ગુજરાતી" [ref=e140] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDc
+      - link "ಕನ್ನಡ" [ref=e141] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDg
+      - link "മലയാളം" [ref=e142] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDk
+      - link "ਪੰਜਾਬੀ" [ref=e143] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_DN82SwGgBkVQP_UYYSJ0UokmBPQ%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiXkICUrdOSAxX9zDgGHfUKByoQ2ZgBCDo
+    - contentinfo [ref=e145]:
+      - generic [ref=e146]: India
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - link "Advertising" [ref=e149] [cursor=pointer]:
+            - /url: https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+          - link "Business" [ref=e150] [cursor=pointer]:
+            - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+          - link "How Search works" [ref=e151] [cursor=pointer]:
+            - /url: https://google.com/search/howsearchworks/?fg=1
+        - generic [ref=e152]:
+          - link "Privacy" [ref=e153] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=e154] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1
+          - button "Settings" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]: Settings
+  - generic:
+    - dialog "Choose Chrome, the browser built by Google":
+      - generic [ref=e168]:
+        - generic [ref=e169]: Choose Chrome, the browser built by Google
+        - generic [ref=e170]: Try a fast, secure browser with automatic updates
+        - generic [ref=e171]:
+          - button "Not interested" [ref=e173] [cursor=pointer]:
+            - generic [ref=e175]: Not interested
+          - button "Try it" [ref=e177] [cursor=pointer]:
+            - generic [ref=e179]: Try it
+```

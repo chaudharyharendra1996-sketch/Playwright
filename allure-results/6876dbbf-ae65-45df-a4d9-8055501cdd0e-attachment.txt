@@ -1,0 +1,6 @@
+Page Title: Automation Testing Practice
+Page URL: https://testautomationpractice.blogspot.com/
+User Typed: Harendra Singh
+Header: Automation Testing Practice
+Input Class: form-control
+Table Rows Found: 7
