@@ -1,0 +1,3 @@
+🔐 Auth token obtained: 1236e9e92980e83
+📋 Using booking ID: 1233
+📡 Status: 200 OK

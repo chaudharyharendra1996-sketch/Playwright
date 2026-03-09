@@ -1,0 +1,2 @@
+🔐 Auth token obtained: 770ff96705bd120
+📋 Using booking ID: 631

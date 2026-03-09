@@ -1,0 +1,3 @@
+🔐 Auth token obtained: df3f6cd1a9d37f5
+📋 Using booking ID: 631
+⚠️  Invalid ID status: 405
